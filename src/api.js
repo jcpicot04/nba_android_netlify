@@ -5,8 +5,7 @@ const app = express();
 const router = express.Router();
 
 router.get("/equipos", (req, res) => {
-  res.json({
-    data: [
+  res.json([
       {
       "id": 1,
       "abreviacion": "ATL",
@@ -457,13 +456,11 @@ router.get("/equipos", (req, res) => {
         "asistencias":"Bradley Beal"
       }
       }
-      ]
-  });
+      ]);
 });
 
 router.get("/jugadores", (req, res) => {
-  res.json({
-    data: [
+  res.json([
       {
       "id": 1,
       "nombre": "Kevin Durant",
@@ -603,15 +600,12 @@ router.get("/jugadores", (req, res) => {
           "equipo": "UTAH JAZZ",
           "posicion": "SG",
           "image":"https://sportshub.cbsistatic.com/i/r/2021/10/05/b2d767b9-654b-470c-bf76-4a9f1687b4a1/thumbnail/100x100/d5a845a64fa094ac0e1d093eba645c5b/2842760.png"
-      },
-
-    ]
-  });
+      }
+    ]);
 });
 
 router.get("/partidos", (req, res) => {
-  res.json({
-    data: [
+  res.json([
     {
       "id":1,
       "fecha":"2022-01-07",
@@ -722,7 +716,7 @@ router.get("/partidos", (req, res) => {
       "local_logo":"https://seeklogo.com/images/U/utah-jazz-logo-D841C47B4D-seeklogo.com.png",
       "visitante_logo":"https://seeklogo.com/images/P/phoenix-suns-logo-E88B4F8EBA-seeklogo.com.png"
     }
-    ]});
+    ]);
 });
 
 app.use(`/.netlify/functions/api`, router);
