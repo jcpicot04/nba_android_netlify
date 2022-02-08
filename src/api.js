@@ -14,297 +14,447 @@ router.get("/equipos", (req, res) => {
       "division": "Southeast",
       "nombre_completo": "Atlanta Hawks",
       "nombre": "Hawks",
-      "logo": "https://seeklogo.com/images/N/nba-atlanta-hawks-logo-66FC641EB4-seeklogo.com.png"
+      "logo": "https://seeklogo.com/images/N/nba-atlanta-hawks-logo-66FC641EB4-seeklogo.com.png",
+      mejores_jugadores: {
+        "puntos":"Trae Young",
+        "rebotes":"John Collins",
+        "asistencias":"De'Andre Hunter"
+      }
       },
       {
       "id": 2,
-      "abbreviation": "BOS",
-      "city": "Boston",
-      "conference": "East",
+      "abreviacion": "BOS",
+      "ciudad": "Boston",
+      "conferencia": "East",
       "division": "Atlantic",
-      "full_name": "Boston Celtics",
-      "name": "Celtics",
-      "logo":"https://seeklogo.com/images/B/boston-celtics-logo-1FE499BFC3-seeklogo.com.png"
+      "nombre_completo": "Boston Celtics",
+      "nombre": "Celtics",
+      "logo":"https://seeklogo.com/images/B/boston-celtics-logo-1FE499BFC3-seeklogo.com.png",
+      mejores_jugadores: {
+        "puntos":"Jayson Tatum",
+        "rebotes":"Jaylen Brown",
+        "asistencias":"Dennis Schroder"
+      }
       },
       {
       "id": 3,
-      "abbreviation": "BKN",
-      "city": "Brooklyn",
-      "conference": "East",
+      "abreviacion": "BKN",
+      "ciudad": "Brooklyn",
+      "conferencia": "East",
       "division": "Atlantic",
-      "full_name": "Brooklyn Nets",
-      "name": "Nets",
-      "logo":"https://seeklogo.com/images/B/brooklyn-nets-logo-CBE7DF14E6-seeklogo.com.png"
+      "nombre_completo": "Brooklyn Nets",
+      "nombre": "Nets",
+      "logo":"https://seeklogo.com/images/B/brooklyn-nets-logo-CBE7DF14E6-seeklogo.com.png",
+      mejores_jugadores: {
+        "puntos":"Kevin Durant",
+        "rebotes":"James Harden",
+        "asistencias":"Kyrie Irving"
+      }
       },
       {
       "id": 4,
-      "abbreviation": "CHA",
-      "city": "Charlotte",
-      "conference": "East",
+      "abreviacion": "CHA",
+      "ciudad": "Charlotte",
+      "conferencia": "East",
       "division": "Southeast",
-      "full_name": "Charlotte Hornets",
-      "name": "Hornets",
-      "logo":"https://seeklogo.com/images/N/nba-charlotte-hornets-logo-CA24EBAADE-seeklogo.com.png"
+      "nombre_completo": "Charlotte Hornets",
+      "nombre": "Hornets",
+      "logo":"https://seeklogo.com/images/N/nba-charlotte-hornets-logo-CA24EBAADE-seeklogo.com.png",
+      mejores_jugadores: {
+        "puntos":"Miles Bridges",
+        "rebotes":"LaMelo Ball",
+        "asistencias":"Terry Rozier"
+      }
       },
       {
       "id": 5,
-      "abbreviation": "CHI",
-      "city": "Chicago",
-      "conference": "East",
+      "abreviacion": "CHI",
+      "ciudad": "Chicago",
+      "conferencia": "East",
       "division": "Central",
-      "full_name": "Chicago Bulls",
-      "name": "Bulls",
-      "logo":"https://seeklogo.com/images/C/chicago-bulls-logo-60FB510213-seeklogo.com.png"
+      "nombre_completo": "Chicago Bulls",
+      "nombre": "Bulls",
+      "logo":"https://seeklogo.com/images/C/chicago-bulls-logo-60FB510213-seeklogo.com.png",
+      mejores_jugadores: {
+        "puntos":"Demar Derozan",
+        "rebotes":"Zach Lavine",
+        "asistencias":"Nikola Vucevic"
+      }
       },
       {
       "id": 6,
-      "abbreviation": "CLE",
-      "city": "Cleveland",
-      "conference": "East",
+      "abreviacion": "CLE",
+      "ciudad": "Cleveland",
+      "conferencia": "East",
       "division": "Central",
-      "full_name": "Cleveland Cavaliers",
-      "name": "Cavaliers",
-      "logo":"https://seeklogo.com/images/C/cleveland-cavaliers-logo-DAA1AE4FA4-seeklogo.com.png"
+      "nombre_completo": "Cleveland Cavaliers",
+      "nombre": "Cavaliers",
+      "logo":"https://seeklogo.com/images/C/cleveland-cavaliers-logo-DAA1AE4FA4-seeklogo.com.png",
+      mejores_jugadores: {
+        "puntos":"Darius Garland",
+        "rebotes":"Jarrett Allen",
+        "asistencias":"Collin Sexton"
+      }
       },
       {
       "id": 7,
-      "abbreviation": "DAL",
-      "city": "Dallas",
-      "conference": "West",
+      "abreviacion": "DAL",
+      "ciudad": "Dallas",
+      "conferencia": "West",
       "division": "Southwest",
-      "full_name": "Dallas Mavericks",
-      "name": "Mavericks",
-      "logo":"https://seeklogo.com/images/D/dallas-mavericks-logo-A4F3AD52F0-seeklogo.com.png"
+      "nombre_completo": "Dallas Mavericks",
+      "nombre": "Mavericks",
+      "logo":"https://seeklogo.com/images/D/dallas-mavericks-logo-A4F3AD52F0-seeklogo.com.png",
+      mejores_jugadores: {
+        "puntos":"Kristaps Porzingis",
+        "rebotes":"Boban Marjanovic",
+        "asistencias":"Luka Doncic"
+      }
       },
       {
       "id": 8,
-      "abbreviation": "DEN",
-      "city": "Denver",
-      "conference": "West",
+      "abreviacion": "DEN",
+      "ciudad": "Denver",
+      "conferencia": "West",
       "division": "Northwest",
-      "full_name": "Denver Nuggets",
-      "name": "Nuggets",
-      "logo":"https://seeklogo.com/images/D/denver-nuggets-intl-logo-B7D4FE060B-seeklogo.com.png"
+      "nombre_completo": "Denver Nuggets",
+      "nombre": "Nuggets",
+      "logo":"https://seeklogo.com/images/D/denver-nuggets-intl-logo-B7D4FE060B-seeklogo.com.png",
+      mejores_jugadores: {
+        "puntos":"Nikola Jokic",
+        "rebotes":"Aaron Gordon",
+        "asistencias":"Will Barton"
+      }
       },
       {
       "id": 9,
-      "abbreviation": "DET",
-      "city": "Detroit",
-      "conference": "East",
+      "abreviacion": "DET",
+      "ciudad": "Detroit",
+      "conferencia": "East",
       "division": "Central",
-      "full_name": "Detroit Pistons",
-      "name": "Pistons",
-      "logo":"https://seeklogo.com/images/D/detroit-pistons-logo-D352385AEF-seeklogo.com.png"
+      "nombre_completo": "Detroit Pistons",
+      "nombre": "Pistons",
+      "logo":"https://seeklogo.com/images/D/detroit-pistons-logo-D352385AEF-seeklogo.com.png",
+      mejores_jugadores: {
+        "puntos":"Cade Cunningham",
+        "rebotes":"Saddiq Bey",
+        "asistencias":"Frank Jackson"
+      }
       },
       {
       "id": 10,
-      "abbreviation": "GSW",
-      "city": "Golden State",
-      "conference": "West",
+      "abreviacion": "GSW",
+      "ciudad": "Golden State",
+      "conferencia": "West",
       "division": "Pacific",
-      "full_name": "Golden State Warriors",
-      "name": "Warriors",
-      "logo":"https://seeklogo.com/images/G/golden-state-warriors-logo-C4106147E7-seeklogo.com.png"
+      "nombre_completo": "Golden State Warriors",
+      "nombre": "Warriors",
+      "logo":"https://seeklogo.com/images/G/golden-state-warriors-logo-C4106147E7-seeklogo.com.png",
+      mejores_jugadores: {
+        "puntos":"Stephen Curry",
+        "rebotes":"Kevon Looney",
+        "asistencias":"Andrew Wiggins"
+      }
       },
       {
       "id": 11,
-      "abbreviation": "HOU",
-      "city": "Houston",
-      "conference": "West",
+      "abreviacion": "HOU",
+      "ciudad": "Houston",
+      "conferencia": "West",
       "division": "Southwest",
-      "full_name": "Houston Rockets",
-      "name": "Rockets",
-      "logo":"https://seeklogo.com/images/H/houston-rockets-logo-1AD80DE2AF-seeklogo.com.png"
+      "nombre_completo": "Houston Rockets",
+      "nombre": "Rockets",
+      "logo":"https://seeklogo.com/images/H/houston-rockets-logo-1AD80DE2AF-seeklogo.com.png",
+      mejores_jugadores: {
+        "puntos":"Christian Wood",
+        "rebotes":"Jalen Green",
+        "asistencias":"Eric Gordon"
+      }
       },
       {
       "id": 12,
-      "abbreviation": "IND",
-      "city": "Indiana",
-      "conference": "East",
+      "abreviacion": "IND",
+      "ciudad": "Indiana",
+      "conferencia": "East",
       "division": "Central",
-      "full_name": "Indiana Pacers",
-      "name": "Pacers",
-      "logo":"https://seeklogo.com/images/I/indiana-pacers-logo-99373FBDEA-seeklogo.com.png"
+      "nombre_completo": "Indiana Pacers",
+      "nombre": "Pacers",
+      "logo":"https://seeklogo.com/images/I/indiana-pacers-logo-99373FBDEA-seeklogo.com.png",
+      mejores_jugadores: {
+        "puntos":"Domantas Sabonis",
+        "rebotes":"Caris LeVert",
+        "asistencias":"Malcolm Brogdon"
+      }
       },
       {
       "id": 13,
-      "abbreviation": "LAC",
-      "city": "LA",
-      "conference": "West",
+      "abreviacion": "LAC",
+      "ciudad": "LA",
+      "conferencia": "West",
       "division": "Pacific",
-      "full_name": "LA Clippers",
-      "name": "Clippers",
-      "logo":"https://seeklogo.com/images/L/la-clippers-logo-D831C30029-seeklogo.com.png"
+      "nombre_completo": "LA Clippers",
+      "nombre": "Clippers",
+      "logo":"https://seeklogo.com/images/L/la-clippers-logo-D831C30029-seeklogo.com.png",
+      mejores_jugadores: {
+        "puntos":"Paul George",
+        "rebotes":"Ivica Zubac",
+        "asistencias":"Reggie Jackson"
+      }
       },
       {
       "id": 14,
-      "abbreviation": "LAL",
-      "city": "Los Angeles",
-      "conference": "West",
+      "abreviacion": "LAL",
+      "ciudad": "Los Angeles",
+      "conferencia": "West",
       "division": "Pacific",
-      "full_name": "Los Angeles Lakers",
-      "name": "Lakers",
-      "logo":"https://seeklogo.com/images/L/los-angeles-lakers-logo-BA16455BF3-seeklogo.com.png"
+      "nombre_completo": "Los Angeles Lakers",
+      "nombre": "Lakers",
+      "logo":"https://seeklogo.com/images/L/los-angeles-lakers-logo-BA16455BF3-seeklogo.com.png",
+      mejores_jugadores: {
+        "puntos":"LeBron James",
+        "rebotes":"Anthony Davis",
+        "asistencias":"Russell Westbrook"
+      }
       },
       {
       "id": 15,
-      "abbreviation": "MEM",
-      "city": "Memphis",
-      "conference": "West",
+      "abreviacion": "MEM",
+      "ciudad": "Memphis",
+      "conferencia": "West",
       "division": "Southwest",
-      "full_name": "Memphis Grizzlies",
-      "name": "Grizzlies",
-      "logo":"https://seeklogo.com/images/M/memphis-grizzlies-logo-7550074A10-seeklogo.com.png"
+      "nombre_completo": "Memphis Grizzlies",
+      "nombre": "Grizzlies",
+      "logo":"https://seeklogo.com/images/M/memphis-grizzlies-logo-7550074A10-seeklogo.com.png",
+      mejores_jugadores: {
+        "puntos":"Ja Morant",
+        "rebotes":"Steven Adams",
+        "asistencias":"Dillon Brooks"
+      }
       },
       {
       "id": 16,
-      "abbreviation": "MIA",
-      "city": "Miami",
-      "conference": "East",
+      "abreviacion": "MIA",
+      "ciudad": "Miami",
+      "conferencia": "East",
       "division": "Southeast",
-      "full_name": "Miami Heat",
-      "name": "Heat",
-      "logo":"https://seeklogo.com/images/M/miami-heat-logo-83BB9EFF58-seeklogo.com.png"
+      "nombre_completo": "Miami Heat",
+      "nombre": "Heat",
+      "logo":"https://seeklogo.com/images/M/miami-heat-logo-83BB9EFF58-seeklogo.com.png",
+      mejores_jugadores: {
+        "puntos":"Jimmy Butler",
+        "rebotes":"Bam Adebayo",
+        "asistencias":"Tyler Herro"
+      }
       },
       {
       "id": 17,
-      "abbreviation": "MIL",
-      "city": "Milwaukee",
-      "conference": "East",
+      "abreviacion": "MIL",
+      "ciudad": "Milwaukee",
+      "conferencia": "East",
       "division": "Central",
-      "full_name": "Milwaukee Bucks",
-      "name": "Bucks",
-      "logo":"https://seeklogo.com/images/M/milwaukee-bucks-logo-1FB6E617D0-seeklogo.com.png"
+      "nombre_completo": "Milwaukee Bucks",
+      "nombre": "Bucks",
+      "logo":"https://seeklogo.com/images/M/milwaukee-bucks-logo-1FB6E617D0-seeklogo.com.png",
+      mejores_jugadores: {
+        "puntos":"Giannis Antetokounmpo",
+        "rebotes":"Khris Middleton",
+        "asistencias":"Jrue Holiday"
+      }
       },
       {
       "id": 18,
-      "abbreviation": "MIN",
-      "city": "Minnesota",
-      "conference": "West",
+      "abreviacion": "MIN",
+      "ciudad": "Minnesota",
+      "conferencia": "West",
       "division": "Northwest",
-      "full_name": "Minnesota Timberwolves",
-      "name": "Timberwolves",
-      "logo":"https://seeklogo.com/images/M/minnesota-timberwolves-logo-B362F9482F-seeklogo.com.png"
+      "nombre_completo": "Minnesota Timberwolves",
+      "nombre": "Timberwolves",
+      "logo":"https://seeklogo.com/images/M/minnesota-timberwolves-logo-B362F9482F-seeklogo.com.png",
+      mejores_jugadores: {
+        "puntos":"Karl-Anthony Towns",
+        "rebotes":"Anthony Edwards",
+        "asistencias":"D'Angello Russell"
+      }
       },
       {
       "id": 19,
-      "abbreviation": "NOP",
-      "city": "New Orleans",
-      "conference": "West",
+      "abreviacion": "NOP",
+      "ciudad": "New Orleans",
+      "conferencia": "West",
       "division": "Southwest",
-      "full_name": "New Orleans Pelicans",
-      "name": "Pelicans",
-      "logo":"https://seeklogo.com/images/N/new-orleans-pelicans-logo-67880DAB9E-seeklogo.com.png"
+      "nombre_completo": "New Orleans Pelicans",
+      "nombre": "Pelicans",
+      "logo":"https://seeklogo.com/images/N/new-orleans-pelicans-logo-67880DAB9E-seeklogo.com.png",
+      mejores_jugadores: {
+        "puntos":"Brandon Ingram",
+        "rebotes":"Jonas Valanciunas",
+        "asistencias":"Brandom Ingram"
+      }
       },
       {
       "id": 20,
-      "abbreviation": "NYK",
-      "city": "New York",
-      "conference": "East",
+      "abreviacion": "NYK",
+      "ciudad": "New York",
+      "conferencia": "East",
       "division": "Atlantic",
-      "full_name": "New York Knicks",
-      "name": "Knicks",
-      "logo":"https://seeklogo.com/images/N/new-york-knicks-logo-7BCA2D9A68-seeklogo.com.png"
+      "nombre_completo": "New York Knicks",
+      "nombre": "Knicks",
+      "logo":"https://seeklogo.com/images/N/new-york-knicks-logo-7BCA2D9A68-seeklogo.com.png",
+      mejores_jugadores: {
+        "puntos":"Julius Randle",
+        "rebotes":"Nerlens Noel",
+        "asistencias":"Mitchell Robinson"
+      }
       },
       {
       "id": 21,
-      "abbreviation": "OKC",
-      "city": "Oklahoma City",
-      "conference": "West",
+      "abreviacion": "OKC",
+      "ciudad": "Oklahoma City",
+      "conferencia": "West",
       "division": "Northwest",
-      "full_name": "Oklahoma City Thunder",
-      "name": "Thunder",
-      "logo":"https://seeklogo.com/images/O/oklahoma-city-thunder-nba-logo-76BBE35B6A-seeklogo.com.png"
+      "nombre_completo": "Oklahoma City Thunder",
+      "nombre": "Thunder",
+      "logo":"https://seeklogo.com/images/O/oklahoma-city-thunder-nba-logo-76BBE35B6A-seeklogo.com.png",
+      mejores_jugadores: {
+        "puntos":"Gilgeous Alexander",
+        "rebotes":"Josh Giddey",
+        "asistencias":"Mike Muscala"
+      }
       },
       {
       "id": 22,
-      "abbreviation": "ORL",
-      "city": "Orlando",
-      "conference": "East",
+      "abreviacion": "ORL",
+      "ciudad": "Orlando",
+      "conferencia": "East",
       "division": "Southeast",
-      "full_name": "Orlando Magic",
-      "name": "Magic",
-      "logo":"https://seeklogo.com/images/O/orlando-magic-logo-BBE03E04A3-seeklogo.com.png"
+      "nombre_completo": "Orlando Magic",
+      "nombre": "Magic",
+      "logo":"https://seeklogo.com/images/O/orlando-magic-logo-BBE03E04A3-seeklogo.com.png",
+      mejores_jugadores: {
+        "puntos":"Cole Anthony",
+        "rebotes":"Wendell Carter Jr",
+        "asistencias":"Franz Wagner"
+      }
       },
       {
       "id": 23,
-      "abbreviation": "PHI",
-      "city": "Philadelphia",
-      "conference": "East",
+      "abreviacion": "PHI",
+      "ciudad": "Philadelphia",
+      "conferencia": "East",
       "division": "Atlantic",
-      "full_name": "Philadelphia 76ers",
-      "name": "76ers",
-      "logo":"https://seeklogo.com/images/P/philadelphia-76ers-logo-1B0F580BA2-seeklogo.com.png"
+      "nombre_completo": "Philadelphia 76ers",
+      "nombre": "76ers",
+      "logo":"https://seeklogo.com/images/P/philadelphia-76ers-logo-1B0F580BA2-seeklogo.com.png",
+      mejores_jugadores: {
+        "puntos":"Gary Clark",
+        "rebotes":"Seth Curry",
+        "asistencias":"Joel Embiid"
+      }
       },
       {
       "id": 24,
-      "abbreviation": "PHX",
-      "city": "Phoenix",
-      "conference": "West",
+      "abreviacion": "PHX",
+      "ciudad": "Phoenix",
+      "conferencia": "West",
       "division": "Pacific",
-      "full_name": "Phoenix Suns",
-      "name": "Suns",
-      "logo":"https://seeklogo.com/images/P/phoenix-suns-logo-E88B4F8EBA-seeklogo.com.png"
+      "nombre_completo": "Phoenix Suns",
+      "nombre": "Suns",
+      "logo":"https://seeklogo.com/images/P/phoenix-suns-logo-E88B4F8EBA-seeklogo.com.png",
+      mejores_jugadores: {
+        "puntos":"Deandre Ayton",
+        "rebotes":"Bismack Biyombo",
+        "asistencias":"Devin Booker"
+      }
       },
       {
       "id": 25,
-      "abbreviation": "POR",
-      "city": "Portland",
-      "conference": "West",
+      "abreviacion": "POR",
+      "ciudad": "Portland",
+      "conferencia": "West",
       "division": "Northwest",
-      "full_name": "Portland Trail Blazers",
-      "name": "Trail Blazers",
-      "logo":"https://seeklogo.com/images/P/portland-trail-blazers-logo-8016836772-seeklogo.com.png"
+      "nombre_completo": "Portland Trail Blazers",
+      "nombre": "Trail Blazers",
+      "logo":"https://seeklogo.com/images/P/portland-trail-blazers-logo-8016836772-seeklogo.com.png",
+      mejores_jugadores: {
+        "puntos":"Keljin Blevins",
+        "rebotes":"Greg Brown III",
+        "asistencias":"CJ Elleby"
+      }
       },
       {
       "id": 26,
-      "abbreviation": "SAC",
-      "city": "Sacramento",
-      "conference": "West",
+      "abreviacion": "SAC",
+      "ciudad": "Sacramento",
+      "conferencia": "West",
       "division": "Pacific",
-      "full_name": "Sacramento Kings",
-      "name": "Kings",
-      "logo":"https://seeklogo.com/images/S/sacramento-kings-logo-EBB8B9D66E-seeklogo.com.png"
+      "nombre_completo": "Sacramento Kings",
+      "nombre": "Kings",
+      "logo":"https://seeklogo.com/images/S/sacramento-kings-logo-EBB8B9D66E-seeklogo.com.png",
+      mejores_jugadores: {
+        "puntos":"Harrison Barnes",
+        "rebotes":"Terence Davis",
+        "asistencias":"De'Aaron Fox"
+      }
       },
       {
       "id": 27,
-      "abbreviation": "SAS",
-      "city": "San Antonio",
-      "conference": "West",
+      "abreviacion": "SAS",
+      "ciudad": "San Antonio",
+      "conferencia": "West",
       "division": "Southwest",
-      "full_name": "San Antonio Spurs",
-      "name": "Spurs",
-      "logo":"https://seeklogo.com/images/S/san-antonio-spurs-logo-344629EB43-seeklogo.com.png"
+      "nombre_completo": "San Antonio Spurs",
+      "nombre": "Spurs",
+      "logo":"https://seeklogo.com/images/S/san-antonio-spurs-logo-344629EB43-seeklogo.com.png",
+      mejores_jugadores: {
+        "puntos":"Keita Bates-Diop",
+        "rebotes":"Devontae Cacok",
+        "asistencias":"Zach Collins"
+      }
       },
       {
       "id": 28,
-      "abbreviation": "TOR",
-      "city": "Toronto",
-      "conference": "East",
+      "abreviacion": "TOR",
+      "ciudad": "Toronto",
+      "conferencia": "East",
       "division": "Atlantic",
-      "full_name": "Toronto Raptors",
-      "name": "Raptors",
-      "logo":"https://seeklogo.com/images/T/toronto-raptors-logo-5FBA5CDB18-seeklogo.com.png"
+      "nombre_completo": "Toronto Raptors",
+      "nombre": "Raptors",
+      "logo":"https://seeklogo.com/images/T/toronto-raptors-logo-5FBA5CDB18-seeklogo.com.png",
+      mejores_jugadores: {
+        "puntos":"Fred VanVleet",
+        "rebotes":"Pascal Siakam",
+        "asistencias":"OG Anunoby"
+      }
       },
       {
       "id": 29,
-      "abbreviation": "UTA",
-      "city": "Utah",
-      "conference": "West",
+      "abreviacion": "UTA",
+      "ciudad": "Utah",
+      "conferencia": "West",
       "division": "Northwest",
-      "full_name": "Utah Jazz",
-      "name": "Jazz",
-      "logo":"https://seeklogo.com/images/U/utah-jazz-logo-D841C47B4D-seeklogo.com.png"
+      "nombre_completo": "Utah Jazz",
+      "nombre": "Jazz",
+      "logo":"https://seeklogo.com/images/U/utah-jazz-logo-D841C47B4D-seeklogo.com.png",
+      mejores_jugadores: {
+        "puntos":"Jared Butler",
+        "rebotes":"Mike Conley",
+        "asistencias":"Trent Forrest"
+      }
       },
       {
       "id": 30,
-      "abbreviation": "WAS",
-      "city": "Washington",
-      "conference": "East",
+      "abreviacion": "WAS",
+      "ciudad": "Washington",
+      "conferencia": "East",
       "division": "Southeast",
-      "full_name": "Washington Wizards",
-      "name": "Wizards",
-      "logo":"https://seeklogo.com/images/W/washington-wizards-logo-D3D3BB1285-seeklogo.com.png"
+      "nombre_completo": "Washington Wizards",
+      "nombre": "Wizards",
+      "logo":"https://seeklogo.com/images/W/washington-wizards-logo-D3D3BB1285-seeklogo.com.png",
+      mejores_jugadores: {
+        "puntos":"Deni Avdija",
+        "rebotes":"Joel Ayayi",
+        "asistencias":"Bradley Beal"
+      }
       }
       ]);
 });
